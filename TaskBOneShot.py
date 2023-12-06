@@ -1,14 +1,11 @@
-# This is a sample Python script.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import os
 import openai
 import pandas as pd
 import time
 import argparse
 
-openai.api_key = "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"
+openai.api_key = ""
 #openai.organization = ""
 
 PROMPT = """
@@ -85,7 +82,7 @@ def generate_predictions(input_file):
  #       break
     return output_dict
 
-# Press the green button in the gutter to run the script.
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_file', type=str, required=True)
@@ -95,4 +92,3 @@ if __name__ == '__main__':
     print('Saving predictions to csv file')
     df.to_csv('taskB_SummQA_runSolis.csv', index=False)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
