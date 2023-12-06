@@ -10,7 +10,7 @@ from langchain.prompts.chat import (
 )
 from langchain.prompts.few_shot import FewShotPromptTemplate
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 #openai.organization = ""
 
 
